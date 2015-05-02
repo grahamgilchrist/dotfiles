@@ -2,15 +2,6 @@
 
 # Run on a new machine to add dotfiles config from this repo
 
-# TODO: add new machine software setup
-# Maybe split new machine setup and dotfiles additon to separate bash scripts
-# so that we can easily add dotfiles to an existing machine withotu full 
-# software install
-
-# Copy git completion script
-mkdir -p ~/.dotfiles/scripts
-wget -O ~/.dotfiles/scripts/git-completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
-
 # Install git setup
 ln -s ~/.dotfiles/gitignore ~/.gitignore
 ln -s ~/.dotfiles/gitconfig ~/.gitconfig
