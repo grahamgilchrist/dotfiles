@@ -7,8 +7,6 @@
 # so that we can easily add dotfiles to an existing machine withotu full 
 # software install
 
-# TODO: install git completion script needed by git shell
-
 # Copy git completion script
 wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash > ~/.dotfiles/scripts/git-completion.bash
 
