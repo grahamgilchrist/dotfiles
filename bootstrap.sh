@@ -8,7 +8,8 @@
 # software install
 
 # Copy git completion script
-wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash > ~/.dotfiles/scripts/git-completion.bash
+mkdir -p ~/.dotfiles/scripts
+wget -O ~/.dotfiles/scripts/git-completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
 
 # Install git setup
 ln -s ~/.dotfiles/gitignore ~/.gitignore
