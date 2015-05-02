@@ -9,9 +9,12 @@
 
 # TODO: install git completion script needed by git shell
 
+# Copy git completion script
+wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash > ~/.dotfiles/scripts/git-completion.bash
+
 # Install git setup
-ln -s ~/.dotfiles/.gitignore ~/.gitignore
-ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
+ln -s ~/.dotfiles/gitignore ~/.gitignore
+ln -s ~/.dotfiles/gitconfig ~/.gitconfig
 
 # Most unix systems use a .bashrc for user config
 if [ -f "$HOME/.bashrc" ]; then
