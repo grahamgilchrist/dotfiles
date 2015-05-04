@@ -7,6 +7,8 @@
 # so that we can easily add dotfiles to an existing machine withotu full 
 # software install
 
+# TODO: install git completion script needed by git shell
+
 # Install git setup
 ln -s ~/.dotfiles/.gitignore ~/.gitignore
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
