@@ -13,5 +13,12 @@
 ln -s ~/.dotfiles/.gitignore ~/.gitignore
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 
-echo "source .dotfiles/.bash_profile" > ~/.bash_profile
-echo "source .dotfiles/.bash_profile" > ~/.bashrc
+# Most unix systems use a .bashrc for user config
+if [ -f "~/.bashrc" ]; then
+    echo "source ~/.dotfiles/.bash_profile" >> ~/.bashrc
+fi
+
+# Mac OS X uses a .bash_profile for user config
+if [ -f "~/.bash_profile" ]; then
+    echo "source ~/.dotfiles/.bash_profile" >> ~/.bash_profile
+fi
