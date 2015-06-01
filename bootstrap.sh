@@ -8,7 +8,7 @@ ln -s ~/.dotfiles/gitconfig ~/.gitconfig
 
 # Most unix systems use a .bashrc for user config
 if [ -f "$HOME/.bashrc" ]; then
-    echo "found .bashrc"
+    echo "found .bashrc, adding config"
     echo "" >> ~/.bashrc
     echo "# Import grahamgilchrist dotfiles" >> ~/.bashrc
     echo "source ~/.dotfiles/.bash_profile" >> ~/.bashrc
