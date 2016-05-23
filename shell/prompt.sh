@@ -1,3 +1,8 @@
+# bash completion
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+	. $(brew --prefix)/etc/bash_completion
+fi
+
 #Git prompt 
 export GIT_PS1_SHOWDIRTYSTATE=1
 export GIT_PS1_SHOWUNTRACKEDFILES=1
