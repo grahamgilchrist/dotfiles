@@ -1,6 +1,8 @@
 # bash completion
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
+if command_exists brew; then
+  if [ -f $(brew --prefix)/etc/bash_completion ]; then
 	. $(brew --prefix)/etc/bash_completion
+  fi
 fi
 
 #Git prompt 
